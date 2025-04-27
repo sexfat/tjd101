@@ -12,6 +12,7 @@ $mapColor : (
 ); // map
 
 body {
+  $a : #bbff00;//  區域變數
   font-size: 16px;
   background-color: #fff;
   color: map-get($mapColor, fontBlue); //map取值
