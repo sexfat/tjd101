@@ -31,11 +31,21 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 .menu ul li {
   width: 120px;
-  height: auto;
-  margin: 10px;
+  height: 40px;
+  margin: 0 10px;
   background-color: #02007d;
   color: #fff;
+}
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+.menu ul li a:hover {
+  background-color: #0095ff;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
