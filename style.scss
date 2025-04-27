@@ -3,11 +3,15 @@ $h1-Size : 50px; //數值
 $h1Color : #f20; //顏色
 $bgc : null;//空值  
 $marginCenter : 10px auto; // list
+$fullwidth : true; //布林
+
 
 body {
   font-size: 16px;
   background-color: #fff;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   color: $h1Color;
@@ -21,4 +25,16 @@ h1 {
    background-color: $h1Color;
    color: #333;
    margin: $marginCenter;
+}
+
+nav {
+  @if $fullwidth {
+     width: 100%;
+  }@else {
+      width: 996px;
+      margin: $marginCenter;
+  }
+  height: 40px;
+  background-color: #0044ff;
+  color: #fff;
 }
