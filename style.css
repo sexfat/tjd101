@@ -1,33 +1,4 @@
 @charset "UTF-8";
-html {
-  font-size: 13px;
-}
-
-body {
-  background-color: #fff;
-  color: #0084ff;
-  font-family: "微軟正黑體";
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: #f20;
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-.logo {
-  width: 150px;
-  height: 40px;
-  background-color: #f20;
-  color: #333;
-  margin: 10px auto;
-}
-
 .menu {
   width: 100%;
   height: 40px;
@@ -55,4 +26,33 @@ h2 {
 .menu ul li a:hover {
   background-color: #0095ff;
   height: 40px;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+  background-color: #f20;
+  color: #333;
+  margin: 10px auto;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  background-color: #fff;
+  color: #0084ff;
+  font-family: "微軟正黑體";
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #f20;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
 }/*# sourceMappingURL=style.css.map */

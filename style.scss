@@ -1,8 +1,44 @@
-@import 'var' ;
+//basic
+@import 'sass/basic/var';
+@import 'sass/basic/color';
+@import 'sass/basic/breakpoint';
+@import 'sass/basic/font';
+@import 'sass/basic/spacing';
+
+
+// mixin
+@import 'sass/mixins/mixin';
+
+
+// component
+@import 'sass/component/btn';
+@import 'sass/component/form';
+@import 'sass/component/tab';
+
+
+// layout
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+@import 'sass/layout/login';
+@import 'sass/layout/sidebar';
+
+//page
+@import 'sass/page/main';
+@import 'sass/page/about';
+@import 'sass/page/product';
+
+
+// plugin
+
+@import  'sass/plugin/bootstrap';
+
+
+
 
 html {
     font-size: $bodyfont;
 }
+
 // @media screen and (max-width: 520px) {
 //     html {
 //         font-size: $m-bodyfont;
@@ -24,19 +60,14 @@ h1 {
     font-size: map-get($font , h1);
     background-color: $bgc;
 }
+
 h2 {
-  font-size: map-get($font, h2);
+    font-size: map-get($font, h2);
 }
 
 
 
-.logo {
-    width: 150px;
-    height: 40px;
-    background-color: $h1Color;
-    color: #333;
-    margin: $marginCenter;
-}
+
 
 //布林值 
 // nav {
@@ -70,41 +101,3 @@ h2 {
 // }
 
 //nesting 寫法
-.menu {
-    @if $fullwidth {
-        width: 100%;
-    }
-
-    @else {
-        width: 996px;
-        margin: $marginCenter;
-    }
-
-    height: 40px;
-    background-color: #0044ff;
-    color: #fff;
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        li {
-            width: 120px;
-            height: 40px;
-            margin: 0 10px;
-            background-color: #02007d;
-            color: #fff;
-            a {
-               text-decoration: none;
-               display: block;
-               color: #fff;
-               &:hover {
-                background-color: #0095ff;
-                height: 40px;
-               }
-            }
-        }
-    }
-}
-
-
