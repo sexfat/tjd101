@@ -2,19 +2,23 @@
 $h1-Size : 50px; //數值
 $h1Color : #f20; //顏色
 $bgc : null;//空值  
-
-
+$marginCenter : 10px auto; // list
 
 body {
   font-size: 16px;
   background-color: #fff;
   color: #333;
 }
-
 h1 {
-
   color: $h1Color;
   font-size: $h1-Size;
   background-color: $bgc;
 }
 
+.logo {
+   width: 150px;
+   height: 40px;
+   background-color: $h1Color;
+   color: #333;
+   margin: $marginCenter;
+}
