@@ -1,14 +1,6 @@
-//變數數值型態
-$h1-Size : 50px; //數值
-$h1Color : #f20; //顏色
-$bgc : null; //空值  
-$marginCenter : 10px auto; // list
-$fullwidth : true; //布林
-$fontFamily : '微軟正黑體'; //字串
-$mapColor : (key : value,
-    fontRed : #ff2200,
-    fontBlue :#0084ff,
-); // map
+@import 'var' ;
+
+
 
 body {
     $a : #bbff00; //  區域變數
@@ -101,7 +93,6 @@ h1 {
             }
         }
     }
-
-
-
 }
+
+
