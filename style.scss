@@ -5,16 +5,16 @@ $bgc : null;//空值
 $marginCenter : 10px auto; // list
 $fullwidth : true; //布林
 $fontFamily : '微軟正黑體'; //字串
-$map : (
+$mapColor : (
   key : value,     
   fontRed : #ff2200,   
   fontBlue :#0084ff,
-);
+); // map
 
 body {
   font-size: 16px;
   background-color: #fff;
-  color: #333;
+  color: map-get($mapColor, fontBlue); //map取值
   font-family: $fontFamily;
   margin: 0;
   padding: 0;
