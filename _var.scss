@@ -9,3 +9,27 @@ $mapColor : (key : value,
     fontRed : #ff2200,
     fontBlue :#0084ff,
 ); // map
+
+
+
+// color
+$primary :  #5188F6;
+$secondary : #9B5AF6;
+$success : #22C55E;
+$warning : #F59E0B;
+$error : #EF4444;
+
+$white: #fcfcfc;
+$black : #0f0f0f;
+
+// font
+$bodyfont : 13px;
+$m-bodyfont: 16px; 
+
+$font :(
+ h1 : 4rem,
+ h2 : 3rem,
+ h3 : 2rem,
+ h4 : 1.5rem,
+ h5 : 1rem,
+)

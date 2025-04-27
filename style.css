@@ -1,6 +1,9 @@
 @charset "UTF-8";
+html {
+  font-size: 13px;
+}
+
 body {
-  font-size: 16px;
   background-color: #fff;
   color: #0084ff;
   font-family: "微軟正黑體";
@@ -10,7 +13,11 @@ body {
 
 h1 {
   color: #f20;
-  font-size: 50px;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 .logo {

@@ -1,10 +1,17 @@
 @import 'var' ;
 
+html {
+    font-size: $bodyfont;
+}
+// @media screen and (max-width: 520px) {
+//     html {
+//         font-size: $m-bodyfont;
+//     } 
+// }
 
 
 body {
     $a : #bbff00; //  區域變數
-    font-size: 16px;
     background-color: #fff;
     color: map-get($mapColor, fontBlue); //map取值
     font-family: $fontFamily;
@@ -14,9 +21,14 @@ body {
 
 h1 {
     color: $h1Color;
-    font-size: $h1-Size;
+    font-size: map-get($font , h1);
     background-color: $bgc;
 }
+h2 {
+  font-size: map-get($font, h2);
+}
+
+
 
 .logo {
     width: 150px;
