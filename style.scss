@@ -30,7 +30,7 @@
 
 // plugin
 
-@import  'sass/plugin/bootstrap';
+@import  'sass/plugin/scss/bootstrap';
 
 
 
@@ -105,12 +105,14 @@ h2 {
 
 //mixin
 //宣告
+
+// @include borderRadius(圓角值);
 @mixin borderRadius($r){
     border-radius: $r;
  }
  
 
-
+// @include boxcenter(寬度 , 圓角值)
 @mixin boxcenter($w ,$c){
   margin: auto;
   width: $w;
@@ -124,7 +126,6 @@ h2 {
  background-color: $primary;
  //呼叫
  @include boxcenter(600px , 10px);
-
 }
 
 
