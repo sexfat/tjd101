@@ -138,6 +138,6 @@ h2 {
 
 
 
-@include btn( 'default' , #ff0000,  30px , true , 60px);
-@include btn( 'primary' , #006eff,  30px , true);
-@include btn( 'secondary' , #00ffb7,  30px , true);
+@include btn( 'default' , $primary,  16px , false , 60px);
+@include btn( 'primary' , $secondary,  16px);
+@include btn( 'success' , $success,  16px);

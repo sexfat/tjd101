@@ -77,52 +77,43 @@ h2 {
 }
 
 .btn-default {
-  background-color: #ff0000;
+  background-color: #5188F6;
   color: #fff;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid #ff0000;
-  background-color: initial;
-  color: #ff0000;
   border-radius: 60px;
-  font-size: 30px;
+  font-size: 16px;
   transition: all 0.3s ease;
 }
 .btn-default:hover {
-  background-color: #990000;
+  background-color: #0b4fd6;
 }
 
 .btn-primary {
-  background-color: #006eff;
+  background-color: #9B5AF6;
   color: #fff;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid #006eff;
-  background-color: initial;
-  color: #006eff;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 16px;
   transition: all 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: #004299;
+  background-color: #640cde;
 }
 
-.btn-secondary {
-  background-color: #00ffb7;
+.btn-success {
+  background-color: #22C55E;
   color: #fff;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
-  border: 1px solid #00ffb7;
-  background-color: initial;
-  color: #00ffb7;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 16px;
   transition: all 0.3s ease;
 }
-.btn-secondary:hover {
-  background-color: #00996e;
+.btn-success:hover {
+  background-color: #136e34;
 }/*# sourceMappingURL=style.css.map */
