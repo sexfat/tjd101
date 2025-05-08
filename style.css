@@ -36,6 +36,13 @@
   margin: 10px auto;
 }
 
+.main .banner {
+  width: 1366px;
+  margin: auto;
+  height: 400px;
+  background-color: #b9b9b9;
+}
+
 html {
   font-size: 13px;
 }
@@ -122,4 +129,14 @@ h2 {
   width: 20px;
   height: 90px;
   margin: 95px;
+  font: 10px;
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
 }/*# sourceMappingURL=style.css.map */
