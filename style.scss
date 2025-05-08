@@ -138,6 +138,9 @@ h2 {
 
 
 @include btn( 'default' , $primary,  16px , false , 60px);
+@include m(){
+  @include btn( 'default' , $primary,  30px , false , 0px);
+}
 @include btn( 'primary' , $secondary,  16px);
 @include btn( 'success' , $success,  16px);
 
@@ -160,5 +163,8 @@ h6 {
 
 h1 {
  font-size: math.div(65px , $bodyfont) + rem;
+ @include m(){
+  font-size: math.div(130px , $bodyfont) + rem;
+ }
 }
 

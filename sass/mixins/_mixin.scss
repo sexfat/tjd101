@@ -1,48 +1,62 @@
 // @include borderRadius(圓角值);
 @mixin borderRadius($r) {
-    border-radius: $r;
-  }
+  border-radius: $r;
+}
 
 
-  // @include boxcenter(寬度 , 圓角值)
+// @include boxcenter(寬度 , 圓角值)
 @mixin boxcenter($w , $c) {
-    margin: auto;
-    width: $w;
-    //   border-radius: 16px;
-    @include borderRadius($c);
-  }
-  
+  margin: auto;
+  width: $w;
+  //   border-radius: 16px;
+  @include borderRadius($c);
+}
+
 
 // @include btn(class名稱 , 被景色 , 大小  , 外框線 false , 圓角)
-@mixin btn($class , $bgc , $fontSize , $outline: false , $b:10px ) {
-    .btn-#{$class} {
-      background-color: $bgc;
-      color: #fff;
-      text-align: center;
-      padding: 10px 20px;
-      cursor: pointer;
-      @if $outline {
-        border: 1px solid $bgc;
-        background-color: initial;
-        color: $bgc;
-      } 
-  
-      @include borderRadius($b);
-      font-size: $fontSize;
-      transition: all .3s ease;
-      &:hover {
-        background-color: darken($bgc, 20);
-      }
+@mixin btn($class , $bgc , $fontSize , $outline: false, $b: 10px) {
+  .btn-#{$class} {
+    background-color: $bgc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    @if $outline {
+      border: 1px solid $bgc;
+      background-color: initial;
+      color: $bgc;
+    }
+
+    @include borderRadius($b);
+    font-size: $fontSize;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: darken($bgc, 20);
     }
   }
+}
 
 // 控制區塊(滿版跟固定)
-@mixin layout($w){
-    @if $w == 100 {
-      width: 100%;
-    }@else {
-       width: $w + px;
-       margin: auto;
-    } 
+@mixin layout($w) {
+  @if $w ==100 {
+    width: 100%;
   }
+
+  @else {
+    width: $w + px;
+    margin: auto;
+  }
+}
+
+
+
+
+//@include m(){手機板屬性}
+@mixin m(){
+  @media all and (max-width: map-get($breakpoint ,mobile)) {
+    @content;
+  }
+}
 
