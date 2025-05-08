@@ -30,13 +30,13 @@
 
 // plugin
 
-@import  'sass/plugin/scss/bootstrap';
+// @import  'sass/plugin/scss/bootstrap';
 
 
 
 
 html {
-    font-size: $bodyfont;
+  font-size: $bodyfont;
 }
 
 // @media screen and (max-width: 520px) {
@@ -47,22 +47,23 @@ html {
 
 
 body {
-    $a : #bbff00; //  區域變數
-    background-color: #fff;
-    color: map-get($mapColor, fontBlue); //map取值
-    font-family: $fontFamily;
-    margin: 0;
-    padding: 0;
+  $a : #bbff00; //  區域變數
+  background-color: #fff;
+  color: map-get($mapColor, fontBlue); //map取值
+  font-family: $fontFamily;
+  margin: 0;
+  padding: 0;
+  min-height: 2300px;
 }
 
 h1 {
-    color: $h1Color;
-    font-size: map-get($font , h1);
-    background-color: $bgc;
+  color: $h1Color;
+  font-size: map-get($font , h1);
+  background-color: $bgc;
 }
 
 h2 {
-    font-size: map-get($font, h2);
+  font-size: map-get($font, h2);
 }
 
 
@@ -107,43 +108,61 @@ h2 {
 //宣告
 
 // @include borderRadius(圓角值);
-@mixin borderRadius($r){
-    border-radius: $r;
- }
- 
+@mixin borderRadius($r) {
+  border-radius: $r;
+}
+
 
 // @include boxcenter(寬度 , 圓角值)
-@mixin boxcenter($w ,$c){
+@mixin boxcenter($w , $c) {
   margin: auto;
   width: $w;
-//   border-radius: 16px;
+  //   border-radius: 16px;
   @include borderRadius($c);
 }
 
 
 .box {
- height: 300px;
- background-color: $primary;
- //呼叫
- @include boxcenter(600px , 10px);
+  height: 300px;
+  background-color: $primary;
+  //呼叫
+  @include boxcenter(600px, 10px);
 }
 
 
 .modal {
-  @include boxcenter(70% , 20px);
+  @include boxcenter(70%, 20px);
   height: 400px;
   background-color: #e7e7e7;
   position: relative;
   z-index: 4;
 }
 
+// .bg {
+//    width: 300px;
+//    height: 200px;
+//    background-color: lighten( #000  , 80);
+// }
 
-.btn {
- @include borderRadius(10px);
 
 
+@mixin btn($class , $bgc , $fontSize) {
+  .btn-#{$class} {
+    background-color: $bgc;
+    color: #fff;
+    // border: 1px solid #333;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    @include borderRadius(10px);
+    font-size: $fontSize;
+    transition: all .3s ease;
+    &:hover {
+      background-color: darken($bgc, 20);
+    }
+  }
 }
 
-
-
-
+@include btn( 'default' , #ff0000,  30px);
+@include btn( 'primary' , #006eff,  30px);
+@include btn( 'secondary' , #00ffb7,  30px);
