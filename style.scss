@@ -107,19 +107,9 @@ h2 {
 //mixin
 //宣告
 
-// @include borderRadius(圓角值);
-@mixin borderRadius($r) {
-  border-radius: $r;
-}
 
 
-// @include boxcenter(寬度 , 圓角值)
-@mixin boxcenter($w , $c) {
-  margin: auto;
-  width: $w;
-  //   border-radius: 16px;
-  @include borderRadius($c);
-}
+
 
 
 .box {
@@ -146,23 +136,8 @@ h2 {
 
 
 
-@mixin btn($class , $bgc , $fontSize) {
-  .btn-#{$class} {
-    background-color: $bgc;
-    color: #fff;
-    // border: 1px solid #333;
-    text-align: center;
-    padding: 10px 20px;
-    cursor: pointer;
-    @include borderRadius(10px);
-    font-size: $fontSize;
-    transition: all .3s ease;
-    &:hover {
-      background-color: darken($bgc, 20);
-    }
-  }
-}
 
-@include btn( 'default' , #ff0000,  30px);
-@include btn( 'primary' , #006eff,  30px);
-@include btn( 'secondary' , #00ffb7,  30px);
+
+@include btn( 'default' , #ff0000,  30px , true , 60px);
+@include btn( 'primary' , #006eff,  30px , true);
+@include btn( 'secondary' , #00ffb7,  30px , true);
