@@ -159,4 +159,64 @@ h1 {
   h1 {
     font-size: 10rem;
   }
+}
+
+.color {
+  background-color: #fff;
+  width: 350px;
+  height: 40px;
+}
+
+.color-100 {
+  background-color: #ffb3d4;
+  width: 350px;
+  height: 40px;
+}
+
+.color-200 {
+  background-color: #ff8abc;
+  width: 350px;
+  height: 40px;
+}
+
+.color-300 {
+  background-color: #ff62a5;
+  width: 350px;
+  height: 40px;
+}
+
+.color-400 {
+  background-color: #ff398e;
+  width: 350px;
+  height: 40px;
+}
+
+.color-500 {
+  background-color: #ff1076;
+  width: 350px;
+  height: 40px;
+}
+
+.color-600 {
+  background-color: #e60063;
+  width: 350px;
+  height: 40px;
+}
+
+.color-700 {
+  background-color: #bd0051;
+  width: 350px;
+  height: 40px;
+}
+
+.color-800 {
+  background-color: #950040;
+  width: 350px;
+  height: 40px;
+}
+
+.color-900 {
+  background-color: #6c002e;
+  width: 350px;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */

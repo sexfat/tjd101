@@ -137,34 +137,72 @@ h2 {
 // }
 
 
-@include btn( 'default' , $primary,  16px , false , 60px);
-@include m(){
-  @include btn( 'default' , $primary,  30px , false , 0px);
+@include btn('default', $primary, 16px, false, 60px);
+
+@include m() {
+  @include btn('default', $primary, 30px, false, 0px);
 }
-@include btn( 'primary' , $secondary,  16px);
-@include btn( 'success' , $success,  16px);
+
+@include btn('primary', $secondary, 16px);
+@include btn('success', $success, 16px);
 
 
 .a {
-  width:  10 + 10px;
-  height:  100 - 10px;
+  width: 10 + 10px;
+  height: 100 - 10px;
   // margin:  8.9 * 10.7 + px //原始
   // margin:  math.round(8.9 * 10.7) + px; //四捨五入
   // margin:  math.ceil(8.9 * 10.7) + px; //無條件進位
-  margin:  math.floor(8.9 * 10.7) + px; //無條件捨去
-  font : (100 / 10 ) + px ;
-  font-size : math.div(48px , 16px) + rem;
+  margin: math.floor(8.9 * 10.7) + px; //無條件捨去
+  font: (100 / 10) + px;
+  font-size: math.div(48px, 16px) + rem;
 }
 
 
 h6 {
-   font-size: math.div(13px , $bodyfont) + rem;
+  font-size: math.div(13px, $bodyfont) + rem;
 }
 
 h1 {
- font-size: math.div(65px , $bodyfont) + rem;
- @include m(){
-  font-size: math.div(130px , $bodyfont) + rem;
- }
+  font-size: math.div(65px, $bodyfont) + rem;
+
+  @include m() {
+    font-size: math.div(130px, $bodyfont) + rem;
+  }
 }
 
+@mixin push($num) {
+  @for $i from 1 through $num {
+    .push-left-#{$i} {
+      position: relative;
+      left: $i * 1px;
+    }
+
+    .push-top-#{$i} {
+      position: relative;
+      top: $i * 1px;
+    }
+  }
+}
+
+
+// @include push(100);
+
+
+
+@for $i from 0 through 9 {
+  @if $i ==0 {
+     .color{
+      background-color: #fff;
+      width: 350px;
+      height: 40px;
+            
+     }  
+  }@else{
+    .color-#{$i * 100} {
+      background-color: darken(#ffdceb, $i * 8);
+      width: 350px;
+      height: 40px;
+    }
+  }
+}
