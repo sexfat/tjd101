@@ -220,6 +220,33 @@ h1 {
 @include bgColor('gray', rgb(21, 21, 21));
 
 
+$img : banner1 banner2 banner3 banner4; // list
+
+@each $i in $img {
+  .bg-#{$i} {
+     background-image: url('image/#{$i}.jpg');
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+}
+
+$title : (
+ h1 : 40px,
+ h2 : 30px,
+ h3 : 20px,
+ span : 16px,
+ '.small'  : 12px,
+ '.spec' : 10px 
+);
+
+@each $k , $v  in $title {
+  #{$k} {
+    font-size: $v;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
 
 
 
