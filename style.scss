@@ -189,20 +189,34 @@ h1 {
 // @include push(100);
 
 
+.colorbox {
+  display: flex;
 
-@for $i from 0 through 9 {
-  @if $i ==0 {
-     .color{
-      background-color: #fff;
-      width: 350px;
-      height: 40px;
-            
-     }  
-  }@else{
-    .color-#{$i * 100} {
-      background-color: darken(#ffdceb, $i * 8);
-      width: 350px;
-      height: 40px;
+}
+
+
+
+@mixin bgColor($class , $bgc) {
+  @for $i from 0 through 9 {
+    @if $i ==0 {
+      .#{$class}{
+        background-color: $bgc;
+        width: 80px;
+        height: 60px;
+      }
+    }
+    @else {
+      .#{$class}#{$i * 100} {
+        background-color: lighten($bgc, $i * 7);
+        width: 80px;
+        height: 60px;
+      }
     }
   }
 }
+
+
+@include bgColor('primary', rgb(0, 0, 96));
+@include bgColor('gray', rgb(21, 21, 21));
+
+

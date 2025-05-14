@@ -161,62 +161,126 @@ h1 {
   }
 }
 
-.color {
-  background-color: #fff;
-  width: 350px;
-  height: 40px;
+.colorbox {
+  display: flex;
 }
 
-.color-100 {
-  background-color: #ffb3d4;
-  width: 350px;
-  height: 40px;
+.primary {
+  background-color: rgb(0, 0, 96);
+  width: 80px;
+  height: 60px;
 }
 
-.color-200 {
-  background-color: #ff8abc;
-  width: 350px;
-  height: 40px;
+.primary100 {
+  background-color: #000084;
+  width: 80px;
+  height: 60px;
 }
 
-.color-300 {
-  background-color: #ff62a5;
-  width: 350px;
-  height: 40px;
+.primary200 {
+  background-color: #0000a7;
+  width: 80px;
+  height: 60px;
 }
 
-.color-400 {
-  background-color: #ff398e;
-  width: 350px;
-  height: 40px;
+.primary300 {
+  background-color: #0000cb;
+  width: 80px;
+  height: 60px;
 }
 
-.color-500 {
-  background-color: #ff1076;
-  width: 350px;
-  height: 40px;
+.primary400 {
+  background-color: #0000ef;
+  width: 80px;
+  height: 60px;
 }
 
-.color-600 {
-  background-color: #e60063;
-  width: 350px;
-  height: 40px;
+.primary500 {
+  background-color: #1414ff;
+  width: 80px;
+  height: 60px;
 }
 
-.color-700 {
-  background-color: #bd0051;
-  width: 350px;
-  height: 40px;
+.primary600 {
+  background-color: #3737ff;
+  width: 80px;
+  height: 60px;
 }
 
-.color-800 {
-  background-color: #950040;
-  width: 350px;
-  height: 40px;
+.primary700 {
+  background-color: #5b5bff;
+  width: 80px;
+  height: 60px;
 }
 
-.color-900 {
-  background-color: #6c002e;
-  width: 350px;
-  height: 40px;
+.primary800 {
+  background-color: #7f7fff;
+  width: 80px;
+  height: 60px;
+}
+
+.primary900 {
+  background-color: #a2a2ff;
+  width: 80px;
+  height: 60px;
+}
+
+.gray {
+  background-color: rgb(21, 21, 21);
+  width: 80px;
+  height: 60px;
+}
+
+.gray100 {
+  background-color: #272727;
+  width: 80px;
+  height: 60px;
+}
+
+.gray200 {
+  background-color: #393939;
+  width: 80px;
+  height: 60px;
+}
+
+.gray300 {
+  background-color: #4b4b4b;
+  width: 80px;
+  height: 60px;
+}
+
+.gray400 {
+  background-color: #5c5c5c;
+  width: 80px;
+  height: 60px;
+}
+
+.gray500 {
+  background-color: #6e6e6e;
+  width: 80px;
+  height: 60px;
+}
+
+.gray600 {
+  background-color: gray;
+  width: 80px;
+  height: 60px;
+}
+
+.gray700 {
+  background-color: #929292;
+  width: 80px;
+  height: 60px;
+}
+
+.gray800 {
+  background-color: #a4a4a4;
+  width: 80px;
+  height: 60px;
+}
+
+.gray900 {
+  background-color: #b6b6b6;
+  width: 80px;
+  height: 60px;
 }/*# sourceMappingURL=style.css.map */
